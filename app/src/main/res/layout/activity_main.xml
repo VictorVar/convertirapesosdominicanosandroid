@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".MainActivity">
+
+
+    <RadioGroup
+        android:layout_width="250dp"
+        android:layout_height="285dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/radiodolar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dolar-USD"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioeuro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Euro-EUR"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radiolibra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Libra esterlina-GBP"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radiofranco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Franco suizo-CHF"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioyen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yen Japonés-JPY"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radiohongkones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dolar hongkonés-HKD"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnconvertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="elpepe"
+        android:text="Convertir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.383" />
+
+    <EditText
+        android:id="@+id/convertir"
+        android:layout_width="216dp"
+        android:layout_height="66dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.542"
+        tools:text="Escriba la cantidad" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="167dp"
+        android:layout_height="79dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
